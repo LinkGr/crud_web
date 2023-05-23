@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="criar_elemento()">
     <form>
         <label for="nome">Nome</label>
         <input id="nome" type="text" placeholder="nome">
@@ -16,7 +18,11 @@
     </form>    
 
     <main>
-        <button onclick="criar_elemento()">Criar</button>
+        <h1>Dados</h1>
+        <section>
+            <section id="nome_container"></section>
+            <section id="idade_container"></section>
+        </section>
     </main>
 
         

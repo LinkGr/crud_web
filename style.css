@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+main {
+    max-width: 500px;
+    height: 50vh;
+
+    background-color: antiquewhite;
+    margin: 40px;
+}
+main>section {
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+#nome_container {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(74, 60, 153, 0.233);
+}
+#nome_container>div, #idade_container>div {
+    border: 1px solid black;
+}
+#idade_container {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(76, 167, 99, 0.233);
+}
