@@ -17,7 +17,7 @@ $formulario.addEventListener('submit', function formulario_controller(info_formu
     // Executando console log somente se os 2 campos estiverem preenchidos
     if(document.querySelector('#nome').value != '' &&
     document.querySelector('#idade').value != '') {
-        criar_arquivo();
+        localStorage.setItem($nome, $idade);
     }
 
     // Resetando os valores dos campos para esvaziar o formulario
@@ -25,6 +25,22 @@ $formulario.addEventListener('submit', function formulario_controller(info_formu
     document.querySelector('#idade').value = '';
 });
 
-function criar_arquivo() {
-    
+function criar_elemento() {
+    for (element in localStorage) {
+        if (element != 'clear' &&
+        element != 'length' &&
+        element != 'getItem' &&
+        element != 'setItem' &&
+        element != 'key' && 
+        element != 'removeItem') {
+            div = document.createElement('div').className('cadastro');
+
+            document.appendChild(div);
+            console.log(element);
+        }
+    }
+}
+
+function reset() {
+    localStorage.clear();
 }
